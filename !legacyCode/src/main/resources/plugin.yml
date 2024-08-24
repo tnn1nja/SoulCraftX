@@ -1,0 +1,47 @@
+name: SoulCraftX
+version: '${project.version}'
+main: me.tnn1nja.SoulCraftX.Main
+api-version: 1.19
+authors: [ tnn1nja ]
+description: Custom SoulCraft 4.0 Plugin (will crash in other enviroments)
+depend: [NickAPI, DiscordSRV]
+commands:
+  help:
+    description: A Guide to what commands you can run on SoulCraft
+    usage: /<command>
+  seed:
+    description: Produces SoulCraft world seed
+    usage: /<command>
+  display:
+    description: Changes SoulCraft's Scoreboard
+    usage: /<command> <scoreboard> <objective>
+  kick:
+    description: Kicks players from the server
+    usage: /<command> <player> <reason>
+  members:
+    description: Return or edit SoulCraft's whitelist
+    usage: /<command>
+  nick:
+    description: Change players in-game names
+    usage: /<command> <player> <nickname>
+  lastseen:
+    description: Shows when players were last online
+    usage: /<command> <player>
+  ls:
+    description: Shows when players were last online
+    usage: /<command> <player>
+  online:
+    description: Usable in discord online
+    usage: /<command>
+  playtime:
+    description: Returns players playtime
+    usage: /<command> <player>
+  pt:
+    description: Returns players playtime
+    usage: /<command> <player>
+  playtimetop:
+    description: Returns a leaderboard of players playtime
+    usage: /<command>
+  ptt:
+    description: Returns a leaderboard of players playtime
+    usage: /<command>
