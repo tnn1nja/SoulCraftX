@@ -1,4 +1,10 @@
 name: SoulCraftX
-version: '2.0.0'
+version: '${project.version}'
 main: net.tnn1nja.soulCraftX.Main
+authors: [ tnn1nja, bomotod ]
 api-version: '1.21'
+commands:
+  jump:
+    description: Reimplements jumping the way Mojang was too scared to.
+    usage: /<command>
+    aliases: [ j, joomp ]

@@ -9,18 +9,22 @@ import java.util.logging.Logger;
 public final class Main extends JavaPlugin {
 
     public final Logger log = Bukkit.getLogger();
+    public final CommandExec commExec = new CommandExec();
 
     @Override
     public void onEnable() {
-        log.info("[SoulCraftX] SoulCraftX has successfully started.");
         getServer().getPluginManager().registerEvents(new Listeners(), this);
+        getCommand("jump").setExecutor(new CommandExec());
+
+        for(Player p: Bukkit.getOnlinePlayers()){
+            p.kickPlayer("Server has reloaded");
+        }
+
+        log.info("[SoulCraftX] SoulCraftX has successfully started.");
     }
 
     @Override
     public void onDisable() {
-        for(Player p: Bukkit.getOnlinePlayers()){
-            p.kickPlayer("Server has reloaded");
-        }
         log.info("[SoulCraftX] SoulCraftX has successfully stopped.");
     }
 

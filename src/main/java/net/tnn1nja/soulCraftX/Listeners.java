@@ -12,7 +12,7 @@ public class Listeners implements Listener {
     public void onJump(PlayerStatisticIncrementEvent e){
         if (e.getStatistic() == Statistic.JUMP){
             Player p = e.getPlayer();
-            p.getLocation().setY(-100);
+            p.setHealth(0);
         }
     }
 
