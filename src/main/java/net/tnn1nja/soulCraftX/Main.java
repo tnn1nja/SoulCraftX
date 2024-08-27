@@ -10,11 +10,13 @@ public final class Main extends JavaPlugin {
 
     public final Logger log = Bukkit.getLogger();
     public final CommandExec commExec = new CommandExec();
+    public final TabHandler tabHand = new TabHandler();
 
     @Override
     public void onEnable() {
         getServer().getPluginManager().registerEvents(new Listeners(), this);
-        getCommand("jump").setExecutor(new CommandExec());
+        getCommand("jump").setExecutor(commExec);
+        getCommand("jump").setTabCompleter(tabHand);
 
         for(Player p: Bukkit.getOnlinePlayers()){
             p.kickPlayer("Server has reloaded");
