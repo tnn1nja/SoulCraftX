@@ -1,4 +1,4 @@
-package net.tnn1nja.soulCraftX;
+package net.tnn1nja.soulCraftX.Commands;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;

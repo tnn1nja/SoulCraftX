@@ -1,5 +1,8 @@
 package net.tnn1nja.soulCraftX;
 
+import net.tnn1nja.soulCraftX.Commands.CommandExec;
+import net.tnn1nja.soulCraftX.Commands.TabHandler;
+import net.tnn1nja.soulCraftX.Listeners.Listeners;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;

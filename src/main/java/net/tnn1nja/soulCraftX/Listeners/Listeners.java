@@ -1,4 +1,4 @@
-package net.tnn1nja.soulCraftX;
+package net.tnn1nja.soulCraftX.Listeners;
 
 import org.bukkit.Statistic;
 import org.bukkit.entity.Player;
